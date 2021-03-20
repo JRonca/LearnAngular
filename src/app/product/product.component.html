@@ -1,0 +1,7 @@
+<div [ngSwitch]="product.type">
+    <app-magazine *ngSwitchCase="'magazine'"></app-magazine>
+    <app-book *ngSwitchCase="'book'"></app-book>
+    <app-film *ngSwitchCase="'film'"></app-film>
+
+    <span *ngSwitchDefault>unknown product</span>
+</div>
